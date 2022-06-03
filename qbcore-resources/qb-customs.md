@@ -66,9 +66,10 @@ Config.Locations = {
             text = "Bennys Motorworks"
         },
         restrictions = { 
-            job = { 'bennys', 'mechanic'}, -- Whitelist Jobs (optional)
-            allowedClasses = { 18 }, -- Whitelist vehicle classes (optional)
-            deniedClasses = { 18 } -- Restrict vehicle classes (optional)
+            job = "any", -- Allowed job. Can be an array of strings for multiple jobs. Any for all jobs
+            gang = "any", -- Allowed gang. Can be an array of strings for multiple gangs. Any for all gangs
+            allowedClasses = {}, -- Array of allowed classes. Empty will allow any but denied classes.
+            deniedClasses = {}, -- Array of denied classes.
         },
         zones = { -- Data for box zones to enter shop
             {
